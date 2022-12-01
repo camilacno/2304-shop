@@ -9,20 +9,12 @@ import shirt2 from '../assets/shirts/2.png'
 import shirt3 from '../assets/shirts/3.png'
 
 export default function Home() {
-  const [sliderRef, instanceRef] = useKeenSlider(
-    {
-      slides: {
-        perView: 3,
-        spacing: 48,
-      },
-      slideChanged() {
-        console.log('slide changed')
-      },
+  const [sliderRef, instanceRef] = useKeenSlider({
+    slides: {
+      perView: 3,
+      spacing: 48,
     },
-    [
-      // add plugins here
-    ]
-  )
+  })
 
   return (
     <HomeContainer ref={sliderRef} className='keen-slider'>
