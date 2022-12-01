@@ -10,7 +10,7 @@ export const HomeContainer = styled('main', {
   alignItems: 'center',
   justifyContent: 'center',
   flexDirection: 'row',
-  gap: '1rem',
+  // gap: '1rem', -> não entende esse gap para contar no container do slide, produto fica menor
 })
 
 export const Product = styled('a', {
@@ -22,7 +22,7 @@ export const Product = styled('a', {
   borderRadius: 6,
   cursor: 'pointer',
   overflow: 'hidden',
-  padding: '0.25rem',
+  // padding: '0.25rem', -> same as above, changed to spacing in slider config
   position: 'relative',
 
   img: {
